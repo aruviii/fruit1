@@ -1,0 +1,31 @@
+
+{% extends "app/base.html" %}
+
+{% block content %}
+<br>
+<br>
+<br>
+
+
+{% load static %}
+
+<div id="product_div">
+	
+{% static "" as baseUrl %}
+
+{% for product in products  %}
+	<div id="product_box">
+		<img class="product_img" src="{{product.pic}}">
+		<div id="product_details">
+			<div><h3>{{product}}</h3></div>
+			<div><h3>{{product.price}}</h3></div>
+			
+		</div>
+	</div>
+{% endfor %}
+</div>
+<script type="text/javascript">
+	
+</script>
+
+{% endblock %}
