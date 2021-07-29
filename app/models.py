@@ -17,7 +17,7 @@ class Products(models.Model):
     product_name = models.CharField(max_length=200)
     price = models.FloatField()
     category = models.CharField(choices=CHOICES,max_length=200)
-    pic = models.TextField()
+    pic = models.TextField(max_length=1000)
 
     def __str__(self):
         return self.product_name
