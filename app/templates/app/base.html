@@ -24,22 +24,39 @@ black = #253136
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			width: 270px;
+			margin-bottom:10px ;
 			
 			
 		}
 		#product_box{
 			border: 2px solid #93e3ab;
-			padding: 10px;
 			width: 300px;
-			padding: 10px;
-			margin: 10px;	
+			height: 335px;
+			padding: 0px;
+			margin: 10px;
+			display: flex;
+			flex-direction: column;	
+			align-items: center;
+			justify-content: space-between;
 		}
 		#product_div{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
 
 		}
 		.product_img{
-			width: 300px;
-			height: 300px;
+			margin-top:10px ;
+			width: 270px;
+			height: 270px;
+			transition:.4s;
+			transform-origin: center;
+		}
+		.product_img:hover{
+			width: 280px;
+			height: 280px;
 		}
     </style>
 
